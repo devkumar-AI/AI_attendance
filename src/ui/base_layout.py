@@ -66,9 +66,14 @@ def style_base_layout():
                 color: black !important;
             }
 
+            # h3,h4{
+            #     font-family: 'Outfit', sans-serif !important;
+            #     color: #E0E3FF !important;
+            # }
+
             h3,h4{
                 font-family: 'Outfit', sans-serif !important;
-                color: #E0E3FF !important;
+                color: Black !important;
             }
 
             button{
