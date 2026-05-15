@@ -1,11 +1,19 @@
 import streamlit as st
+from pathlib import Path
 from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen
 from src.screens.home_screen import home_screen
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
 
+PAGE_ICON = Path(__file__).resolve().parent / "src" / "images" / "logo.png"
+
+
 def main():
+    st.set_page_config(
+        page_title="SnapClass - Making Attendance faster using AI",
+        page_icon=PAGE_ICON.read_bytes()
+    )
     if "login_type" not in st.session_state :
         st.session_state['login_type'] = None
     match st.session_state['login_type']:

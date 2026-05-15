@@ -44,7 +44,7 @@ def style_base_layout():
         .stApp {
             /* Hide Top Bar of streamlit */
 
-            # MainMenu, footer, header{visibility: hidden;}
+            MainMenu, footer, header{visibility: hidden;}
 
             .block-container {
                 padding-top: 1.5rem !important;
